@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高眼壓兔實驗流程圖</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      #password-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f9f9f9;
+      }
+      #password-container input {
+        padding: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      #password-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #content-container {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">高眼壓兔實驗流程圖</h1>
+      <div class="timeline">
+        <!-- Day 0 -->
+        <div class="node">
+          <div class="date">3/26<br />Day 0</div>
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            6隻兔
+            <div class="subnode">
+              <i class="fas fa-syringe icon"></i>單眼注射TA (第1次)<br />
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <!-- Day 3 -->
+        <div class="node">
+          <div class="date">3/29<br />Day 3</div>
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            6隻兔
+            <div class="subnode">
+              <i class="fas fa-syringe icon"></i>單眼注射TA (第2次)<br />
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <!-- Day 5 -->
+        <div class="node">
+          <div class="date">3/31<br />Day 5</div>
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            6隻兔
+            <div class="subnode">
+              <i class="fas fa-syringe icon"></i>單眼注射TA (第3次)<br />
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <!-- Day 7 -->
+        <div class="node">
+          <div class="date">4/2<br />Day 7</div>
+          <div class="condition">確認眼壓上升</div>
+        </div>
+        <div class="node">
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            6隻兔
+            <div class="subnode">
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <!-- Day 14 -->
+        <div class="node">
+          <div class="date">4/9<br />Day 14</div>
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            實驗組3隻兔
+            <div class="subnode">
+              <i class="fas fa-vial icon"></i>水膠配製 (當日混合水膠及藥品)<br />
+              - 先測眼壓<br />
+              - C/G/GP水膠 0.5 ml<br />
+              - EV 40 µl (501.2 µg/ml → 40 µg/ml)<br />
+              - Latanoprost 12.5 µl (10000 µg/ml → 250 µg/ml)<br />
+              <i class="fas fa-syringe icon"></i>點入50 µl水膠 (第1次)<br />
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <div class="node">
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            6隻兔
+            <div class="subnode">
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <!-- Day 21 -->
+        <div class="node">
+          <div class="date">4/16<br />Day 21</div>
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            實驗組3隻兔
+            <div class="subnode">
+              <i class="fas fa-vial icon"></i>水膠配製 (當日混合水膠及藥品)<br />
+              - 先測眼壓<br />
+              - C/G/GP水膠 0.5 ml<br />
+              - EV 40 µl (501.2 µg/ml → 40 µg/ml)<br />
+              - Latanoprost 12.5 µl (10000 µg/ml → 250 µg/ml)<br />
+              <i class="fas fa-syringe icon"></i>點入50 µl水膠 (第2次)<br />
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <!-- Day 28 -->
+        <div class="node">
+          <div class="date">4/23<br />Day 28</div>
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            實驗組3隻兔
+            <div class="subnode">
+              <i class="fas fa-vial icon"></i>水膠配製 (當日混合水膠及藥品)<br />
+              - 先測眼壓<br />
+              - C/G/GP水膠 0.5 ml<br />
+              - EV 40 µl (501.2 µg/ml → 40 µg/ml)<br />
+              - Latanoprost 12.5 µl (10000 µg/ml → 250 µg/ml)<br />
+              <i class="fas fa-syringe icon"></i>點入50 µl水膠 (第3次)<br />
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <!-- Day 35 -->
+        <div class="node">
+          <div class="date">4/30<br />Day 35</div>
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            實驗組3隻兔
+            <div class="subnode">
+              <i class="fas fa-vial icon"></i>水膠配製 (當日混合水膠及藥品)<br />
+              - 先測眼壓<br />
+              - C/G/GP水膠 0.5 ml<br />
+              - EV 40 µl (501.2 µg/ml → 40 µg/ml)<br />
+              - Latanoprost 12.5 µl (10000 µg/ml → 250 µg/ml)<br />
+              <i class="fas fa-syringe icon"></i>點入50 µl水膠 (第4次)<br />
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <div class="node">
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            6隻兔
+            <div class="subnode">
+              <i class="fas fa-table icon"></i>每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+        <!-- 後續 -->
+        <div class="node">
+          <div class="date">後續</div>
+          <div class="content">
+            <img
+              src="https://img.icons8.com/ios-filled/50/rabbit.png"
+              class="rabbit-icon"
+            />
+            6隻兔
+            <div class="subnode">
+              <i class="fas fa-table icon"></i>繼續每日雙眼眼壓測量
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="preparation-box">
+        <h2>水膠配製流程 (當天配製當天使用)</h2>
+        <div class="step">
+          <strong>1. 準備 C/G/GP 水膠</strong><br />
+          - 取 0.5 ml C/G/GP 水膠至微量離心管，置於冰水浴。
+        </div>
+        <div class="step">
+          <strong>2. 配製 EV 溶液</strong><br />
+          - 取 EV stock (1253 µg/ml) 20 µl 至新微量離心管。<br />
+          - 加入 30 µl ddH2O，濃度調整為 501.2 µg/ml。
+        </div>
+        <div class="step">
+          <strong>3. 配製 Latanoprost 溶液</strong><br />
+          - 取 5 mg Latanoprost，加入 0.5 ml DMSO，濃度為 10000 µg/ml。<br />
+          - 抽取前 pipetting 均勻。
+        </div>
+        <div class="step">
+          <strong>4. 混合水膠與藥物</strong><br />
+          - 取 12.5 µl Latanoprost 溶液 (10000 µg/ml，抽取前 pipetting
+          均勻)，加入 0.5 ml C/G/GP 水膠，最終濃度 250 µg/ml。<br />
+          - 用 tip 繞圈攪拌均勻。<br />
+          - 取 40 µl EV 溶液 (501.2 µg/ml，抽取前 pipetting
+          均勻)，加入上述水膠，最終濃度 40 µg/ml。<br />
+          - 用 tip 繞圈攪拌均勻。
+        </div>
+        <div class="step">
+          <strong>5. 水膠裝填</strong><br />
+          - 用 0.3 ml 針筒 (無針頭) 抽取至少 0.2 ml 配製好的水膠。<br />
+          - 置於保冰袋，帶至動物房。
+        </div>
+        <div class="step">
+          <strong>6. 點藥操作</strong><br />
+          - 點入 50 µl 水膠 (控制刻度，不少於 50 µl)。<br />
+          - 每 7 天點藥後，拍攝控制眼與點藥眼照片。
+        </div>
+      </div>
+      <div class="legend">
+        <strong>圖例</strong><br />
+        <img
+          src="https://img.icons8.com/ios-filled/50/rabbit.png"
+          style="width: 15px"
+        />
+        6隻兔/3隻兔<br />
+        <i class="fas fa-vial"></i> 水膠配製<br />
+        <i class="fas fa-syringe"></i> TA注射/水膠點藥<br />
+        <i class="fas fa-table"></i> 眼壓測量<br />
+        EV: 40 µg/ml<br />
+        Latanoprost: 250 µg/ml<br />
+        水膠體積: 50 µl
+      </div>
+    </div>
+  </body>
+</html>

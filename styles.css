@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.timeline {
+    position: relative;
+    margin-left: 100px;
+    border-left: 4px solid #000;
+    width: 400px;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -8px;
+    border: 8px solid transparent;
+    border-top-color: #000;
+}
+.node {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.date {
+    position: absolute;
+    left: -100px;
+    width: 80px;
+    text-align: right;
+    font-size: 14px;
+}
+.content {
+    margin-left: 20px;
+    background-color: #fff;
+    border: 2px solid #1e90ff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    font-size: 12px;
+    position: relative;
+}
+.condition {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: #fff;
+    border: 2px solid #1e90ff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.subnode {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.icon {
+    margin-right: 5px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.rabbit-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.legend {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 10px;
+    width: 150px;
+}
+.preparation-box {
+    margin-left: 20px;
+    background-color: #fff;
+    border: 2px solid #1e90ff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 350px;
+    font-size: 12px;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+}
+.preparation-box h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.step {
+    margin-bottom: 10px;
+}
+.step strong {
+    display: block;
+    margin-bottom: 5px;
+}
+@media print {
+    body { background-color: #fff; }
+    .container { max-width: 100%; flex-direction: column; }
+    .timeline { width: 100%; }
+    .legend { position: static; margin-top: 20px; }
+    .preparation-box { position: static; margin-top: 20px; width: 100%; }
+}
