@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>高眼壓兔實驗流程圖</title>
+    <title>北榮高眼壓實驗流程圖</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -33,8 +33,12 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1 class="title">高眼壓兔實驗流程圖</h1>
+    <div id="password-container">
+      <input type="password" id="password-input" placeholder="請輸入密碼" />
+      <button onclick="checkPassword()">提交</button>
+    </div>
+    <div id="content-container" class="container">
+      <h1 class="title">北榮高眼壓實驗流程圖</h1>
       <div class="timeline">
         <!-- Day 0 -->
         <div class="node">
@@ -268,5 +272,16 @@
         水膠體積: 50 µl
       </div>
     </div>
+    <script>
+      function checkPassword() {
+        const password = document.getElementById("password-input").value;
+        if (password === "lab123") {
+          document.getElementById("password-container").style.display = "none";
+          document.getElementById("content-container").style.display = "block";
+        } else {
+          alert("密碼錯誤，請重試！");
+        }
+      }
+    </script>
   </body>
 </html>
